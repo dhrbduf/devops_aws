@@ -1,3 +1,8 @@
-EC2 이미지 최신버전 
+EC2 이미지 최신버전  (ami-07edebf3b6affeea1)
+
 
 oky@DESKTOP-6S5VPCB:~/devops/Chapter02$ aws ec2 describe-images --filters "Name=description, Values=Amazon Linux AMI *x6_64 HVM GP2" --query 'Images[*].[CreationDate, Description, ImageId]' --output text | sort -k 1 | tail
+
+
+
+
