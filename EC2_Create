@@ -197,8 +197,13 @@ $ aws cloudformation help  # for the list of options
     "Metadata" :   ------------  임의의 정보를 리소스에 추가
     "Outputs" :   ------------ IP주소 같이 유익한 정보 출력 및 추출
     }
-    
-    
+  
+  
+## 클라우드포머 설정
+1) 클라우드포메이션 - AWSCloudFormer 설정 완료 및 접속여부 확인
+https://ec2-13-125-128-194.ap-northeast-2.compute.amazonaws.com/newtemplate
+
+
 
     
     
