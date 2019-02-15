@@ -1,0 +1,5 @@
+
+
+$ aws ec2 describe-vpcs   ## VPC ID 확인
+
+
