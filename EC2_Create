@@ -99,7 +99,36 @@ Page.77
 [ec2-usr@IP~]$ node -v
 
 
-## node.js 파일 생성
+
+## node.js 파일 생성 (helloworld.js)
+
+var http = require("http")
+
+http.createServer(function (request, response) {
+
+   // Send the HTTP header
+   // HTTP Status: 200 : OK
+   // Content Type: text/plain
+   response.writeHead(200, {'Content-Type': 'text/plain'})
+
+   // Send the response body as "Hello World"
+   response.end('Hello World\n')
+}).listen(3000)
+
+// Console will print the message
+console.log('Server running')
+
+
+## 또는 깃허브에서 다운로드 가능
+[ec2-usr@IP~]$ wget http://bit.ly/2vESNuc -O /home/ec2-user/helloworld.js
+
+
+## 노드 실행
+[ec2-usr@IP~]$ node helloworld.js
+Server running
+
+==> 웹테스트 http://공인IP:3000
+==> CMD테스트 curl localhost:3000
 
 
 
