@@ -188,14 +188,14 @@ $ aws cloudformation help  # for the list of options
 #TIP1. 샘플 템플릿 (https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates-ap-northeast-2.html)
 #TIP2. 최상위 템플릿 구조
     {
-    "AWSTemplateFormatVersion" :
-    "Descripion" : 
-    "Resources" :
-    "Parameters" :
-    "Mappings" :
-    "Conditions" :
-    "Metadata" :
-    "Outputs" :
+    "AWSTemplateFormatVersion" :   ------------- 2010-09-09 언어 버전
+    "Descripion" :      --------------- 작업 요약
+    "Resources" :     ------------ AWS 서비스 초기화 및 서비스 구성
+    "Parameters" :   ------------- SSH 접근을 위한 키페어
+    "Mappings" :    ------------- 일반적인 템플릿 작성
+    "Conditions" :    ------------  조건부 논리 (if문 조건연산자)
+    "Metadata" :   ------------  임의의 정보를 리소스에 추가
+    "Outputs" :   ------------ IP주소 같이 유익한 정보 출력 및 추출
     }
     
     
