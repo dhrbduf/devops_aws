@@ -3,3 +3,17 @@
 $ aws ec2 describe-vpcs   ## VPC ID 확인
 
 
+새로운 보안 그룹 생성
+
+$aws ec2 create-security-group \
+    --group-name HelloWorld \
+    --description "Hello World Demo" \
+    --vpc-id vpc-c981bbaf
+    
+    
+
+ssh(tcp/22)과 tcp/3000 만 인바운드 트래픽 오픈  (기본적으로 모든 아웃바운드 트래픽 허용)
+
+
+
+
