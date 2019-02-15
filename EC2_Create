@@ -186,7 +186,19 @@ Page.87
 $ aws cloudformation help  # for the list of options
     
 #TIP1. 샘플 템플릿 (https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates-ap-northeast-2.html)
-
+#TIP2. 최상위 템플릿 구조
+    {
+    "AWSTemplateFormatVersion" :
+    "Descripion" : 
+    "Resources" :
+    "Parameters" :
+    "Mappings" :
+    "Conditions" :
+    "Metadata" :
+    "Outputs" :
+    }
+    
+    
 
     
     
