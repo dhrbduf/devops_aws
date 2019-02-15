@@ -211,7 +211,9 @@ $ aws ec2 terminate-instances --instance-ids "ID번호"   (EC2 인스턴스 종�
 
 ## 도커 허브에서 (레지스트리) 이미지 가져오기
 $ docker pull alpine    (알파인 리눅스 이미지)
-    
+
+$ docker run alpine echo "Hello World"
+Hello World
     
     
     
