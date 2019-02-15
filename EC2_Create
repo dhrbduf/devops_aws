@@ -40,6 +40,26 @@ $ aws ec2 describe-security-groups \
     
     
     
+
+** aws ec2 describe-subnets --output table      ------------  옵션 사용해보기
+                                     json
+                                     text
+                                     
+                                     
+   
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
