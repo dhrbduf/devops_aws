@@ -206,7 +206,10 @@ $ aws ec2 terminate-instances --instance-ids "ID번호"   (EC2 인스턴스 종�
        컨테이너라고 부르는 자체적인 폴더에서 이미지를 실행함.                  
                         
     
-    
+#TIP3. 리눅스에 도커설치하기 https://www.leafcats.com/153
+
+
+
     
     
     
