@@ -48,7 +48,22 @@ $ aws ec2 describe-security-groups \
                                      
    
   
-    
+Page.70    
+## ssh키 생성하기 (EC2에서 키페어를 생성하고 사설키를 다운로드)
+
+$ aws ec2 create-key-pair --key-name EffectiveDevOpsAWS
+==> 출력값 파일에 저장 ("echo -e (붙이기) > 파일명")
+
+$ echo -e "------BEGIN RSA PRIVATE KEY ~~ > ~/.ssh/EffectiveDevOpsAWS.pem
+
+$ chmod 600 ~/.ssh/EffectiveDevOpsAWS.pem
+
+
+
+
+
+
+
     
     
     
