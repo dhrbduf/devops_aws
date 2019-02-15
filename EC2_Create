@@ -134,12 +134,27 @@ Server running
 
 
 
+## upstart를 이용한 프로세스 자동살리기 (/etc/init/helloworld.conf)  --------------  (아마존 리눅스만 가능)
+
+description "Hello world Deamon"
+
+# Start when the system is ready to do networking.
+start on started elastic-network-interfaces
+
+# Stop when the system is on its way down.
+stop on shutdown
+
+respawn
+script
+    exec su --session-command="/usr/bin/node /home/ec2-user/helloworld.js" ec2-user
+end script
 
 
+## (/etc/init/helloworld.conf) 다운받기    
+[ec2-usr@IP~]$ sudo wget http://bit.ly/2vVvT18 -O /etc/init/helloworld.conf
+[ec2-usr@IP~]$ sudo start helloworld   (아마존 리눅스만 가능)
 
-    
-    
-    
+
     
     
     
