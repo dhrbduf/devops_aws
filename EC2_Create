@@ -59,6 +59,24 @@ $ echo -e "------BEGIN RSA PRIVATE KEY ~~ > ~/.ssh/EffectiveDevOpsAWS.pem
 $ chmod 600 ~/.ssh/EffectiveDevOpsAWS.pem
 
 
+## EC2 인스턴스 띄우기
+
+$ aws ec2 run-instances \ 
+--instance-type t2.micro \
+--key-name EffectiveDevOpsAWS \
+--security-group-ids "넣을것" \
+--image-id ami-4fffc834 \
+--subnet-id subnet-899c56c1
+
+
+
+## 인스턴스 생성의 진행사항 추적 (aws ec2 run-instances 에서 인스턴스ID 확인)
+
+$ aws ec2 describe-instance-status --instance-ids "인스턴스ID"
+==> SystemStatus 값이 Initializing -> ok 로 바뀌면 완료
+
+
+
 
 
 
