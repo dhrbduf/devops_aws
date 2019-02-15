@@ -5,7 +5,7 @@ $ aws ec2 describe-vpcs   ## VPC ID 확인
 
 Page.68
 
-새로운 보안 그룹 생성
+## 새로운 보안 그룹 생성
 
 $aws ec2 create-security-group \
     --group-name HelloWorld \
@@ -31,3 +31,18 @@ $ aws ec2 authorize-security-group-ingress \
     --cidr 0.0.0.0/0
 
 
+
+## 보안그룹 적용 확인
+
+$ aws ec2 describe-security-groups \
+    --group-id "넣을 것" \
+    --output text
+    
+    
+    
+    
+    
+    
+    
+    
+    
