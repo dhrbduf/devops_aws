@@ -155,6 +155,20 @@ end script
 [ec2-usr@IP~]$ sudo start helloworld   (아마존 리눅스만 가능)
 
 
+[ec2-usr@IP~]$ sudo stop helloworld   ------------ 서비스 종료 (아마존 리눅스만 가능)
+
+[ec2-usr@IP~]$ sudo ec2-metadata --instance-id   (ID번호 확인)
+instance-id: "ID번호"
+[ec2-usr@IP~]$ exit
+logout
+
+$ aws ec2 terminate-instances --instance-ids "ID번호"   (EC2 인스턴스 종료)
+
+
+
+
+
+
     
     
     
