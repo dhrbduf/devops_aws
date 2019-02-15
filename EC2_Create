@@ -190,3 +190,21 @@ $ aws ec2 terminate-instances --instance-ids "ID번호"   (EC2 인스턴스 종�
     
     
     
+    
+   
+   
+6장. AWS에서 컨테이너 실행하기
+   
+#TIP. 알파인 리눅스는 가볍고 간단하고 보안성을 목적으로 개발한 리눅스 배포판이다.
+      용량을 줄이기 위해 glibc 대신 musl libc 를 사용 / 쉘 명령어는 GNU util 대신 busybox 를 탑재.
+      특히 도커(docker)에 채택되어 5M 크기의 리눅스 이미지로 유명.
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
