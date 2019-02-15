@@ -77,6 +77,17 @@ $ aws ec2 describe-instance-status --instance-ids "인스턴스ID"
 
 
 
+## EC2 인스턴스 DNS or 공인 IP 찾기
+
+$ aws ec2 describe-instances \
+--instance-ids "인스턴스ID" \
+--query "Reservation[*].Instances[*].PublicIpAddress"
+
+
+
+
+
+
 
 
 
