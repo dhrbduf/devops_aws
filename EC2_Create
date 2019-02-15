@@ -84,7 +84,22 @@ $ aws ec2 describe-instances \
 --query "Reservation[*].Instances[*].PublicIpAddress"
 
 
+## EC2 인스턴스 접속하기 (AMI가 아마존 리눅스 기본사용자는 ec2-user)
 
+$ ssh -i ~/.ssh/EffectiveDevOpsAWS.pem ec2-user@공인IP
+
+
+
+Page.77
+
+## node.js 설치하기
+
+[ec2-usr@IP~]$ sudo yum update
+[ec2-usr@IP~]$ sudo yum install --enablerepo=epel -y nodejs
+[ec2-usr@IP~]$ node -v
+
+
+## node.js 파일 생성
 
 
 
