@@ -6,6 +6,37 @@
 $ aws ec2 describe-vpcs   ## VPC ID 확인
 
 
+oky@DESKTOP-6S5VPCB:~/devops$ aws ec2 describe-vpcs
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-df4919a4",
+            "State": "available",
+            "VpcId": "vpc-bc75c2c6",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-2f56d643",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
 Page.68
 
 ## 새로운 보안 그룹 생성
@@ -13,22 +44,36 @@ Page.68
 $aws ec2 create-security-group \
     --group-name HelloWorld \
     --description "Hello World Demo" \
-    --vpc-id vpc-c981bbaf
+    --vpc-id vpc-bc75c2c6
     
     ** 그룹 ID확인 할것
+    
+oky@DESKTOP-6S5VPCB:~/devops$ aws ec2 create-security-group \
+>     --group-name HelloWorld \
+>     --description "Hello World Demo" \
+>     --vpc-id vpc-bc75c2c6
+{
+    "GroupId": "sg-0b6c9120dd6743afb"
+}
+    
+    
+    
+    
+    
+    
     
     
 
 ssh(tcp/22)과 tcp/3000 만 인바운드 트래픽 오픈  --------------------- (기본적으로 모든 아웃바운드 트래픽 허용)
 
 $ aws ec2 authorize-security-group-ingress \
-    --group-id "넣을 것" \
+    --group-id sg-0b6c9120dd6743afb \
     --protocol tcp \
     --port 22 \
     --cidr 0.0.0.0/0
     
 $ aws ec2 authorize-security-group-ingress \
-    --group-id "넣을 것" \
+    --group-id sg-0b6c9120dd6743afb \
     --protocol tcp \
     --port 3000 \
     --cidr 0.0.0.0/0
