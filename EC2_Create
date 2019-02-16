@@ -83,13 +83,13 @@ $ aws ec2 authorize-security-group-ingress \
 ## 보안그룹 적용 확인
 
 $ aws ec2 describe-security-groups \
-    --group-id "넣을 것" \
+    --group-id sg-0b6c9120dd6743afb \
     --output text
     
     
     
 
-** aws ec2 describe-subnets --output table      ------------  옵션 사용해보기
+** aws ec2 describe-subnets --output table      ------(서브넷정보 확인)
                                      json
                                      text
                                      
@@ -109,10 +109,10 @@ $ chmod 600 ~/.ssh/EffectiveDevOpsAWS.pem
 
 ## EC2 인스턴스 띄우기
 
-$ aws ec2 run-instances \ 
+$ aws ec2 run-instances \
 --instance-type t2.micro \
 --key-name EffectiveDevOpsAWS \
---security-group-ids "넣을것" \
+--security-group-ids sg-0b6c9120dd6743afb \
 --image-id ami-4fffc834 \
 --subnet-id subnet-899c56c1
 
