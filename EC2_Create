@@ -114,13 +114,13 @@ $ aws ec2 run-instances \
 --key-name EffectiveDevOpsAWS \
 --security-group-ids sg-0b6c9120dd6743afb \
 --image-id ami-4fffc834 \
---subnet-id subnet-899c56c1
+--subnet-id subnet-0a12896d
 
 
 
 ## 인스턴스 생성의 진행사항 추적 (aws ec2 run-instances 에서 인스턴스ID 확인)
 
-$ aws ec2 describe-instance-status --instance-ids "인스턴스ID"
+$ aws ec2 describe-instance-status --instance-ids i-0115cc4501ed6533c
 ==> SystemStatus 값이 Initializing -> ok 로 바뀌면 완료
 
 
@@ -128,15 +128,16 @@ $ aws ec2 describe-instance-status --instance-ids "인스턴스ID"
 ## EC2 인스턴스 DNS or 공인 IP 찾기
 
 $ aws ec2 describe-instances \
---instance-ids "인스턴스ID" \
---query "Reservation[*].Instances[*].PublicIpAddress"
+--instance-ids i-0115cc4501ed6533c \
+--query "Reservations[*].Instances[*].PublicIpAddress"
 
 
 ## EC2 인스턴스 접속하기 (AMI가 아마존 리눅스 기본사용자는 ec2-user)
 
-$ ssh -i ~/.ssh/EffectiveDevOpsAWS.pem ec2-user@공인IP
+$ ssh -i ~/.ssh/EffectiveDevOpsAWS.pem ec2-user@3.89.79.81
 
 
+///////////////////////////////////////////////////////////
 
 Page.77
 
