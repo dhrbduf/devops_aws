@@ -254,7 +254,10 @@ https://ec2-174-129-44-194.compute-1.amazonaws.com/newtemplate
 Page.94
 
 ## 템플릿용 파이썬 스크립트를 작성하기 위해 트로포스피어 사용하기
-$ pip install troposphere    (트로포스피어 라이브러리 설치)
+$ pip install troposphere    (트로포스피어 라이브러리 설치)   - Win Bash 에서 실행했음
+
+helloworld-cf-template.py 파일 생성하기 (깃허브에서 복사했음)
+
 
 
 
