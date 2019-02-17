@@ -1,6 +1,9 @@
 
+Page.64
 2장. 첫 번째 웹 응용프로그램 배포하기
 
+oky@DESKTOP-6S5VPCB:~$ aws ec2 describe-images --filters "Name=description,Values=Amazon Linux AMI * x86_64 HVM GP2" --query 'Images[*].[CreationDate, Description, ImageId]' --output text | sort -k 1 | tail
+==> AMI 이미지 버전 
 
 
 $ aws ec2 describe-vpcs   ## VPC ID 확인
