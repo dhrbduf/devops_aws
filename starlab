@@ -64,7 +64,16 @@ AWS RDS와 인스턴스 생성 (http://wildpup.cafe24.com/archives/734)
      이 둘을 사용하게 되면 추가 요금이 부가된다. 본 포스트는 Free tier에서 진행되므로 No를 선택하고 Next 버튼을 클릭한다.
 
 5. 인스턴스 설정을 한다.
-
+   - License Model : 각 데이터베이스 엔진에 대한 라이센스 모델을 선택한다. MySQL은 general public license를 제공한다.
+   - DB Engine Version : 데이터베이스 엔진의 버전을 선택한다.
+   - DB Instance Class : 생성할 DB 인스턴스 클래스 이다. EC2같이 RDS도 인스턴스라는 개념이 있다. 
+                         인스턴스 클래스라는 개념 또한 EC2에서 말하는 개념과 비슷한 의미이다. 
+                         RDS의 인스턴스 클래스에 대한 자세한 정보는 이곳에서 확인할 수 있다. 
+                         인스턴스 클래스는 db.t2.medium의 형태로 이루어져 있는데 앞에 db는 동일하고 뒤에 t2는 인스턴스 패밀리 뒤에 medium은 사양을 뜻한다. 
+                         m으로 시작하는 패밀리는 일반적인 인스턴스이며 r로 시작되는 패밀리는 다른 클래스보다 메모리가 큰 인스턴스들이다.
+   - Multi-AZ Deployment : RDS는 안정성을 위해서 자동 백업과 스냅샷 그리고 다중 사용 영역 배포등의 기능을 제공하는데 Multi-AZ Deployment는 다중 사용 영역 배포를 위한 설정이다.
+   - Storage Type : 저장공간의 타입을 지정할 수 있다.
+   - Allocated Storage : 저장공간의 용량을 지정한다. 최소 5GB에서 3TB까지 설정할 수 있다.
 
 
 
