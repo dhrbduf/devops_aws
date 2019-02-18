@@ -301,6 +301,9 @@ helloworld-cf-template.py 파일 생성하기 (깃허브에서 복사했음)
 
 
 ## 도커 허브에서 (레지스트리) 이미지 가져오기
+
+$ sudo docker service start (도커 시작하기)
+
 $ docker pull alpine    (알파인 리눅스 이미지)
 
 $ docker run alpine echo "Hello World"   (컨테이너 실행)
