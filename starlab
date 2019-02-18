@@ -75,6 +75,11 @@ AWS RDS와 인스턴스 생성 (http://wildpup.cafe24.com/archives/734)
    - Storage Type : 저장공간의 타입을 지정할 수 있다.
    - Allocated Storage : 저장공간의 용량을 지정한다. 최소 5GB에서 3TB까지 설정할 수 있다.
 
+      그 아래에 인스턴스의 접속을 위한 설정이 계속 된다.
 
-
-
+   - DB Instance Identifier : DB의 인스턴스 이름이다.
+   - Master Username : DB의 Master 계정의 계정 명이다.
+   - Master Password/Confirm Password : 계정의 비밀번호를 지정한다.
+   
+   
+   
