@@ -125,7 +125,16 @@ AWS RDS와 인스턴스 생성 (http://wildpup.cafe24.com/archives/734)
    - Security Group을 생성하는 방법은 이곳을 확인한다. 
      Security Group를 생성 시 Type을 MySQL로 지정하면 MySQL에 맞는 포트가 Inbound 룰에 추가되어 지정된다.
 
+11. 생성된 Security Group을 생성된 인스턴스에 적용한다.
+   - 위에서 만들어진 Security Group을 Network & Security 아래에 있는 Security Group 셀렉트 박스에서 찾을 수 있다. 
+     지정하고  Continue 버튼을 클릭한다.
 
+12. 변경된 항목을 확인한다.
+   - Security Group이 변경된 것을 확인할 수 있다. 확인이 완료되면 Modify DB Instance 버튼을 클릭한다.
+
+13. 변경된 부분을 인스턴스의 상세보기에서 확인할 수 있다.
+   - Security Groups에서 추가된 그룹과 제거된 그룹을 확인할 수 있다. 
+     위의 Endpoint 주소를 이용하여 실제 클라이언트에서 접속을 할 수 있다.
 
 
 
