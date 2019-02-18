@@ -99,6 +99,29 @@ AWS RDS와 인스턴스 생성 (http://wildpup.cafe24.com/archives/734)
    - Option Group : MySQL의 옵션 그룹이다. 옵션 그룹 또한 RDS의 Option Group 메뉴를 이용해서 생성할 수 있다.
 
 
+         그 뒤를 따라 Backup과 Maintenace 설정이 있다. 이 둘의 설정 UI는 대략 비슷하게 생겼다.
+   - 백업 옵션은 자동 백업 옵션으로 백업데이터를 유지하는 기간을 설정하는 Backup Retention Period 셀렉트 박스가 있고 
+     Backup Windows에서 select windows를 선택하여 백업 시간을 지정할 수 있다. Duration은 백업에 소요되는 시간이다.
+   - 아래에 Maintenance에서 Auto Minor Version Upgrade는 자동으로 마이너 버전을 업그레이드하는 설정으로 아래의 항목은 
+     위의 백업 항목과 동일한 사용법을 가지고 있다.
+     
+     설정이 완료되면 아래에 Launch DB Instance 버튼을 클릭한다.
+
+7. 생성된 인스턴스를 확인한다.
+   - 인스턴스 생성이 완료되면 View Your DB Instances 버튼을 클릭한다.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
